@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html{
+       
+        @apply scroll-smooth;
+    }
+    body {
+        @apply border-none overflow-x-hidden scroll-smooth;
+    }
+    .btn {
+        @apply py-[10px] px-[14px] rounded-[8px] transition-all duration-300 ease-in-out text-sm font-semibold outline-none;
+    }
+}
+.blur-circle-blue::after {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(74, 58, 255, 0.06) 0%, rgba(251, 206, 154, 0) 100%);
+}
+.blur-circle-orange::after {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(252, 166, 31, 0.08) 0%, rgba(252, 166, 31, 0) 100%);
+}
