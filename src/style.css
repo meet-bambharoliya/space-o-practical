@@ -20,3 +20,43 @@
 .blur-circle-orange::after {
     background: radial-gradient(50% 50% at 50% 50%, rgba(252, 166, 31, 0.08) 0%, rgba(252, 166, 31, 0) 100%);
 }
+@media only screen and (min-width: 1024px) {
+    .step-sec .step-inner:nth-child( odd ) {
+        padding-right: 80px;
+    }
+    .step-sec .step-inner:nth-child( even ) {
+        padding-left: 80px;
+
+    }
+}
+.upcoming-exams .swiper-pagination {
+    position: relative;
+    margin-top: 20px;
+    
+}
+@media only screen and (min-width: 768px) {
+    .upcoming-exams .swiper-pagination {
+        margin-top: 24px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .upcoming-exams .swiper-pagination {
+        margin-top: 32px;
+    }
+}
+@media only screen and (min-width: 1280px) {
+    .upcoming-exams .swiper-pagination {
+        margin-top: 40px;
+    }
+}
+.upcoming-exams .swiper-pagination span.swiper-pagination-bullet {
+    background-color: #D6D6D6;
+    width: 12px;
+    height: 12px;
+    transition: 0.5s;
+}
+.upcoming-exams .swiper-pagination span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 48px;
+    background-color: #372973;
+    border-radius: 6px;
+}
